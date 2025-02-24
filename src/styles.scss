@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@use "./fonts.scss" as *;
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%; /* Ensures that 1rem = 16px */
+  scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+body {
+  line-height: 1.5; /* Better readability */
+  font-family: Arial, sans-serif; /* My preferred default font */
+}
