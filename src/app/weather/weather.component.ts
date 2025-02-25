@@ -10,7 +10,7 @@ import { WeatherService } from '../services/weatherAPI.service';
 })
 export class WeatherComponent {
   constructor(private weatherService: WeatherService) {
-    this.getWeather('Stuttgart');
+    // this.getWeather('Stuttgart');
   }
 
   getWeather(city: string) {
