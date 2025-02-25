@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { WeatherComponent } from './weather/weather.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { MainContentComponent } from './main-content/main-content.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, WeatherComponent],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, MainContentComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
