@@ -14,13 +14,24 @@ html {
 
 body {
   line-height: 1.5; /* Better readability */
-  font-family: Arial, sans-serif; /* My preferred default font */
-  background-color: #4395E0;
-  background-image: url('./assets/img/background.jpg');
+  font-family: "Roboto"; /* My preferred default font */
+  background-color: #4395e0;
+  background-image: url("./assets/img/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1920px;
   height: 100vh;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+app-root {
+  height: 90%;
+  width: 90%;
+  border: 2px solid black;
+  border-radius: 40px;
+  backdrop-filter: blur(10px);
 }
