@@ -1,0 +1,23 @@
+input {
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  background-image: url('/assets/icons/search.png');
+  background-position: 8px center; /* Position des Icons */
+  background-repeat: no-repeat; /* Verhindert, dass sich das Bild wiederholt */
+  background-size: 16px 16px; /* Größe des Icons */
+  padding-left: 30px; /* Platz für das Icon im Input */
+  height: 35px;
+  font-size: 16px;
+  border: none;
+
+  &::placeholder {
+    color: white;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
