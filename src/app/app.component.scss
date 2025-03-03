@@ -1,10 +1,29 @@
 app-header {
-    height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    background-color: rgba(0, 0, 0, 0.2);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+app-main-content {
+  height: calc(100% - 120px);
+  width: 100%;
+  display: flex;
+}
+
+app-footer {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 0;
 }

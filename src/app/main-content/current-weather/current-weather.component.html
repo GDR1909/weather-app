@@ -1,3 +1,6 @@
-<p>current-weather works!</p>
+<h4>Current Weather</h4>
 
-<button (click)="getWeather('Stuttgart')">Wetter abrufen</button>
+@if (weatherApiService.weatherData) {
+    <h5>{{ weatherApiService.weatherData.location.name }}</h5>
+    <img src="{{ weatherApiService.weatherData.current.condition.icon }}">
+}

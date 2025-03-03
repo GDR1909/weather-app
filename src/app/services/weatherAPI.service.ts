@@ -9,10 +9,24 @@ export class WeatherApiService {
   private apiKey = '6ffa0d9448c34c27a1991250252402';
   private apiUrl = `http://api.weatherapi.com/v1/forecast.json`;
 
-  constructor(private http: HttpClient) { }
+  searchedLocation: string = "";
+  weatherData: any;
+
+
+  constructor(public http: HttpClient) { }
 
   getWeather(city: string): Observable<any> {
     const url = `${this.apiUrl}?key=${this.apiKey}&q=${city}&days=3&aqi=yes&alerts=yes&lang=de`;
     return this.http.get<any>(url);
+  }
+
+  saveWeatherData() {
+    this.getWeather(this.searchedLocation).subscribe({
+      next: (data) => {
+        console.log('Wetterdaten:', data),
+        this.weatherData = data;
+      },
+      error: (err) => console.error('Fehler beim Abrufen der Wetterdaten:', err)
+    });
   }
 }
