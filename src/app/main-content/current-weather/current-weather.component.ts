@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { WeatherService } from '../../services/weatherAPI.service';
 
 @Component({
-  selector: 'app-weather',
+  selector: 'app-current-weather',
   standalone: true,
   imports: [],
-  templateUrl: './weather.component.html',
-  styleUrl: './weather.component.scss'
+  templateUrl: './current-weather.component.html',
+  styleUrl: './current-weather.component.scss'
 })
-export class WeatherComponent {
+export class CurrentWeatherComponent {
   constructor(private weatherService: WeatherService) {
     // this.getWeather('Stuttgart');
   }

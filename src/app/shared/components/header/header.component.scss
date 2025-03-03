@@ -1,6 +1,6 @@
 input {
   width: 200px;
-  height: 25px;
+  height: 35px;
   border-radius: 5px;
   background-color: transparent;
   backdrop-filter: blur(10px);
@@ -9,8 +9,6 @@ input {
   background-repeat: no-repeat; /* Verhindert, dass sich das Bild wiederholt */
   background-size: 16px 16px; /* Größe des Icons */
   padding-left: 30px; /* Platz für das Icon im Input */
-  height: 35px;
-  font-size: 16px;
   border: none;
 
   &::placeholder {

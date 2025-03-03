@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { WeatherComponent } from './weather/weather.component';
+import { CurrentWeatherComponent } from './current-weather/current-weather.component';
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [WeatherComponent],
+  imports: [CurrentWeatherComponent],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })
