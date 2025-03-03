@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class WeatherService {
+export class WeatherApiService {
   private apiKey = '6ffa0d9448c34c27a1991250252402';
   private apiUrl = `http://api.weatherapi.com/v1/forecast.json`;
 

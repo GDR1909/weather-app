@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { WeatherService } from '../../services/weatherAPI.service';
+import { WeatherApiService } from '../../services/weatherAPI.service';
 
 @Component({
   selector: 'app-current-weather',
@@ -9,12 +9,12 @@ import { WeatherService } from '../../services/weatherAPI.service';
   styleUrl: './current-weather.component.scss'
 })
 export class CurrentWeatherComponent {
-  constructor(private weatherService: WeatherService) {
+  constructor(private weatherApiService: WeatherApiService) {
     // this.getWeather('Stuttgart');
   }
 
   getWeather(city: string) {
-    this.weatherService.getWeather(city).subscribe({
+    this.weatherApiService.getWeather(city).subscribe({
       next: (data) => console.log('Wetterdaten:',data),
       error: (err) => console.error('Fehler beim Abrufen der Wetterdaten:', err)
     });
