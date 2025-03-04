@@ -1,6 +1,16 @@
-<h4>Current Weather</h4>
+<div class="current-weather">
+    @if (weatherApiService.weatherData) {
+        <div class="city-infos">
+            <div class="city-region-country">
+                <h2>{{ weatherApiService.weatherData.location.name }}</h2>
+                <h5>{{ weatherApiService.weatherData.location.region }}, {{ weatherApiService.weatherData.location.country }}</h5>
+            </div>
 
-@if (weatherApiService.weatherData) {
-    <h5>{{ weatherApiService.weatherData.location.name }}</h5>
-    <img src="{{ weatherApiService.weatherData.current.condition.icon }}">
-}
+            <h1>{{ weatherApiService.weatherData.current.temp_c }}°</h1>
+        </div>
+
+        <img src="{{ weatherApiService.weatherData.current.condition.icon }}">
+    } @else {
+        <h1>Current Weather</h1>
+    }
+</div>

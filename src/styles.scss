@@ -14,7 +14,6 @@ html {
 }
 
 body {
-  line-height: 1.5; /* Better readability */
   font-family: "Roboto"; /* My preferred default font */
   background-color: #4395e0;
   background-image: url("./assets/img/background.jpg");
@@ -33,6 +32,6 @@ app-root {
   height: 90%;
   width: 90%;
   border: 2px solid black;
-  border-radius: 40px;
+  border-radius: 15px;
   backdrop-filter: blur(10px);
 }
