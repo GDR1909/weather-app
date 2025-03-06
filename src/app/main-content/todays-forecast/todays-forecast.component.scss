@@ -1,0 +1,24 @@
+.todays-forecast {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.forecast-hour {
+  display: flex;
+  justify-content: space-evenly;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  hr {
+    border: 1px solid #bbb;
+  }
+}
