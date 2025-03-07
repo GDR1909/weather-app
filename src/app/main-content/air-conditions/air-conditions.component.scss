@@ -1,0 +1,36 @@
+.air-conditions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-evenly;
+
+  img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.left-content,
+.right-content {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.single-info-container {
+  display: flex;
+  gap: 10px;
+}
+
+.span-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

@@ -1,0 +1,47 @@
+<div class="air-conditions">
+    @if (weatherApiService.weatherData) {
+        <h5>AIR CONDITIONS</h5>
+
+        <div class="infos">
+            <div class="left-content">
+                <div class="single-info-container">
+                    <img src="assets/icons/temperatur.png">
+
+                    <div class="span-wrapper">
+                        <span>Real Feel</span>
+                        <span>{{ weatherApiService.weatherData.current.feelslike_c }}°</span>
+                    </div>
+                </div>
+
+                <div class="single-info-container">
+                    <img src="assets/icons/umbrella.png">
+
+                    <div class="span-wrapper">
+                        <span>Chance of rain</span>
+                        <span>{{ weatherApiService.weatherData.forecast.forecastday[0].day.daily_chance_of_rain }}%</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-content">
+                <div class="single-info-container">
+                    <img src="assets/icons/wind.png">
+
+                    <div class="span-wrapper">
+                        <span>Wind</span>
+                        <span>{{ weatherApiService.weatherData.current.wind_kph }} km/h</span>
+                    </div>
+                </div>
+
+                <div class="single-info-container">
+                    <img src="assets/icons/sun.png">
+
+                    <div class="span-wrapper">
+                        <span>UV Index</span>
+                        <span>{{ weatherApiService.weatherData.current.uv }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
