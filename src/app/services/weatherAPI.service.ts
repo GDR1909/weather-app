@@ -16,7 +16,7 @@ export class WeatherApiService {
   constructor(public http: HttpClient) { }
 
   getWeather(city: string): Observable<any> {
-    const url = `${this.apiUrl}?key=${this.apiKey}&q=${city}&days=3&aqi=yes&alerts=yes&lang=de`;
+    const url = `${this.apiUrl}?key=${this.apiKey}&q=${city}&days=3&aqi=yes&alerts=yes`;
     return this.http.get<any>(url);
   }
 

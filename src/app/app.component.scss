@@ -12,7 +12,8 @@ app-header {
 app-main-content {
   height: calc(100% - 120px);
   width: 100%;
-  display: block;
+  display: flex;
+  gap: 20px;
   padding: 20px;
 }
 

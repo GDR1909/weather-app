@@ -1,0 +1,26 @@
+.three-day-forecast {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.three-day-forecast-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.single-day-forecast {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-and-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
