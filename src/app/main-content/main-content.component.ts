@@ -3,6 +3,7 @@ import { CurrentWeatherComponent } from './current-weather/current-weather.compo
 import { TodaysForecastComponent } from './todays-forecast/todays-forecast.component';
 import { AirConditionsComponent } from './air-conditions/air-conditions.component';
 import { ThreeDayForecastComponent } from './three-day-forecast/three-day-forecast.component';
+import { PopularCitiesComponent } from './popular-cities/popular-cities.component';
 
 @Component({
   selector: 'app-main-content',
@@ -11,7 +12,8 @@ import { ThreeDayForecastComponent } from './three-day-forecast/three-day-foreca
     CurrentWeatherComponent,
     TodaysForecastComponent,
     AirConditionsComponent,
-    ThreeDayForecastComponent
+    ThreeDayForecastComponent,
+    PopularCitiesComponent
   ],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss',
