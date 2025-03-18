@@ -1,1 +1,20 @@
-<div class="popular-cities"></div>
+<div class="popular-cities">
+    <h5>POPULAR CITIES</h5>
+
+    <div class="popular-cities-content">
+        @for (data of weatherData; track data) {
+            <div class="single-city">
+                <span>{{ data.city }}</span>
+
+                <div class="icon-and-text">
+                    <img [src]="'http:' + data.icon">
+                    <p>{{ data.condition }}</p>
+                </div>
+
+                <span class="max-min-temp">
+                    {{ data.maxTemp }}° / {{ data.minTemp }}°
+                </span>
+            </div>
+        }
+    </div>
+</div>

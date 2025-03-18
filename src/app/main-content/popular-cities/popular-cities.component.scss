@@ -6,3 +6,21 @@
   border-radius: 15px;
   padding: 15px;
 }
+
+.popular-cities-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.single-city {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-and-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
