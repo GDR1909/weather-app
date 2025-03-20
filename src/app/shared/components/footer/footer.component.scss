@@ -1,0 +1,15 @@
+a {
+  text-decoration: none;
+  color: #bbb;
+  transition: ease-in-out 250ms;
+
+  &:hover {
+    color: white;
+    transition: ease-in-out 250ms;
+  }
+}
+
+hr {
+  border: 1px solid #bbb;
+  height: 20px;
+}
