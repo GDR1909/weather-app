@@ -14,5 +14,6 @@ export class HeaderComponent {
 
   onSubmit() {
     this.weatherApiService.saveWeatherData();
+    this.weatherApiService.searchedLocation = '';
   }
 }
