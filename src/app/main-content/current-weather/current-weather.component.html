@@ -11,6 +11,8 @@
 
         <img src="{{ weatherApiService.weatherData.current.condition.icon }}">
     } @else {
-        <p>Search for a location to see the current weather or click on one of the popular cities to get more informations</p>
+        <div class="hint">
+            <p>Search for a location to see the current weather or click on one of the popular cities to get more informations</p>
+        </div>
     }
 </div>
