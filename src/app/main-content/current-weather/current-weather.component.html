@@ -6,7 +6,7 @@
                 <h5>{{ weatherApiService.weatherData.location.region }}, {{ weatherApiService.weatherData.location.country }}</h5>
             </div>
 
-            <h1>{{ weatherApiService.weatherData.current.temp_c }}°</h1>
+            <h1>{{ weatherApiService.weatherData.current.temp_c | round }}°</h1>
         </div>
 
         <img src="{{ weatherApiService.weatherData.current.condition.icon }}">

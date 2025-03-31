@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { WeatherApiService } from '../../services/weatherAPI.service';
 import { CommonModule } from '@angular/common';
+import { RoundPipe } from '../../pipes/round.pipe';
 
 @Component({
   selector: 'app-popular-cities',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RoundPipe],
   templateUrl: './popular-cities.component.html',
   styleUrl: './popular-cities.component.scss',
 })

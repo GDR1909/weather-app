@@ -9,7 +9,7 @@
 
                     <div class="span-wrapper">
                         <span>Real Feel</span>
-                        <span>{{ weatherApiService.weatherData.current.feelslike_c }}°</span>
+                        <span>{{ weatherApiService.weatherData.current.feelslike_c | round }}°</span>
                     </div>
                 </div>
 
@@ -29,7 +29,7 @@
 
                     <div class="span-wrapper">
                         <span>Wind</span>
-                        <span>{{ weatherApiService.weatherData.current.wind_kph }} km/h</span>
+                        <span>{{ weatherApiService.weatherData.current.wind_kph | round }} km/h</span>
                     </div>
                 </div>
 

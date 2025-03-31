@@ -6,7 +6,7 @@
             <div>
                 <h5>6:00</h5>
                 <img src="{{ weatherApiService.weatherData.forecast.forecastday[0].hour[6].condition.icon }}">
-                <span>{{ weatherApiService.weatherData.forecast.forecastday[0].hour[6].temp_c }}°</span>
+                <span>{{ weatherApiService.weatherData.forecast.forecastday[0].hour[6].temp_c | round }}°</span>
             </div>
 
             <hr>
@@ -14,7 +14,7 @@
             <div>
                 <h5>9:00</h5>
                 <img src="{{ weatherApiService.weatherData.forecast.forecastday[0].hour[9].condition.icon }}">
-                <span>{{ weatherApiService.weatherData.forecast.forecastday[0].hour[9].temp_c }}°</span>
+                <span>{{ weatherApiService.weatherData.forecast.forecastday[0].hour[9].temp_c | round }}°</span>
             </div>
 
             <hr>
@@ -22,7 +22,7 @@
             <div>
                 <h5>12:00</h5>
                 <img src="{{ weatherApiService.weatherData.forecast.forecastday[0].hour[12].condition.icon }}">
-                <span>{{ weatherApiService.weatherData.forecast.forecastday[0].hour[12].temp_c }}°</span>
+                <span>{{ weatherApiService.weatherData.forecast.forecastday[0].hour[12].temp_c | round }}°</span>
             </div>
 
             <hr>
@@ -30,7 +30,7 @@
             <div>
                 <h5>15:00</h5>
                 <img src="{{ weatherApiService.weatherData.forecast.forecastday[0].hour[15].condition.icon }}">
-                <span>{{ weatherApiService.weatherData.forecast.forecastday[0].hour[15].temp_c }}°</span>
+                <span>{{ weatherApiService.weatherData.forecast.forecastday[0].hour[15].temp_c | round }}°</span>
             </div>
 
             <hr>
@@ -38,7 +38,7 @@
             <div>
                 <h5>18:00</h5>
                 <img src="{{ weatherApiService.weatherData.forecast.forecastday[0].hour[18].condition.icon }}">
-                <span>{{ weatherApiService.weatherData.forecast.forecastday[0].hour[18].temp_c }}°</span>
+                <span>{{ weatherApiService.weatherData.forecast.forecastday[0].hour[18].temp_c | round }}°</span>
             </div>
 
             <hr>
@@ -46,7 +46,7 @@
             <div>
                 <h5>21:00</h5>
                 <img src="{{ weatherApiService.weatherData.forecast.forecastday[0].hour[21].condition.icon }}">
-                <span>{{ weatherApiService.weatherData.forecast.forecastday[0].hour[21].temp_c }}°</span>
+                <span>{{ weatherApiService.weatherData.forecast.forecastday[0].hour[21].temp_c | round }}°</span>
             </div>
         </div>
     } @else {
