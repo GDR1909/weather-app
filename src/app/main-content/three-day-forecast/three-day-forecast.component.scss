@@ -14,13 +14,20 @@
 }
 
 .single-day-forecast {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .icon-and-text {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hint {
+  height: calc(261.91px - 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
