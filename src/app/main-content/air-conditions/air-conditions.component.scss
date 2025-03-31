@@ -34,3 +34,10 @@
   flex-direction: column;
   gap: 10px;
 }
+
+.hint {
+  height: calc(205.91px - 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
