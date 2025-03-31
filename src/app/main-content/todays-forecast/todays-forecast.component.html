@@ -49,5 +49,9 @@
                 <span>{{ weatherApiService.weatherData.forecast.forecastday[0].hour[21].temp_c }}°</span>
             </div>
         </div>
+    } @else {
+        <div class="hint">
+            <p>The today's forecast will be shown here</p>
+        </div>
     }
 </div>

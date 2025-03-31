@@ -22,3 +22,10 @@
     border: 1px solid #bbb;
   }
 }
+
+.hint {
+  height: calc(177.83px - 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
