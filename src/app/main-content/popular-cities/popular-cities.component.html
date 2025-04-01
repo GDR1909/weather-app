@@ -1,20 +1,27 @@
 <div class="popular-cities">
     <h5>POPULAR CITIES</h5>
 
-    <div class="popular-cities-content">
-        @for (data of weatherData; track data) {
-            <div class="single-city">
-                <span>{{ data.city }}</span>
+    <table>
+        <tbody>
+            @for (data of weatherData; track data) {
+            <tr>
+                <td>
+                    {{ data.city }}
+                </td>
 
-                <div class="icon-and-text">
+                <td class="icon">
                     <img [src]="'http:' + data.icon">
-                    <p>{{ data.condition }}</p>
-                </div>
+                </td>
 
-                <span class="max-min-temp">
+                <td>
+                    {{ data.condition }}
+                </td>
+
+                <td>
                     {{ data.maxTemp | round }}° / {{ data.minTemp | round }}°
-                </span>
-            </div>
-        }
-    </div>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
 </div>

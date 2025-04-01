@@ -7,20 +7,59 @@
   padding: 15px;
 }
 
-.popular-cities-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+  tr {
+    border-bottom: 1px solid #bbb;
+    transition: ease-in-out 250ms;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.2);
+      transition: ease-in-out 250ms;
+    }
+
+    td:first-child {
+      padding-left: 16px;
+    }
+  }
 }
 
-.single-city {
+.icon {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.icon-and-text {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+
+// top-left and top-right border-radius of the table
+tr:first-child {
+  td {
+    &:first-child {
+      border-top-left-radius: 10px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 10px;
+    }
+  }
+}
+
+// bottom-left and bottom-right border-radius of the table
+tr:last-child {
+  td {
+    &:first-child {
+      border-bottom-left-radius: 10px;
+    }
+
+    &:last-child {
+      border-bottom-right-radius: 10px;
+    }
+  }
 }
