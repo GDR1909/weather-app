@@ -2,46 +2,63 @@
     @if (weatherApiService.weatherData) {
         <h5>3-DAY FORECAST</h5>
 
-        <div class="three-day-forecast-content">
-            <div class="single-day-forecast">
-                <span>Today</span>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        Today
+                    </td>
 
-                <div class="icon-and-text">
-                    <img src="{{ weatherApiService.weatherData.forecast.forecastday[0].day.condition.icon }}">
-                    <p>{{ weatherApiService.weatherData.forecast.forecastday[0].day.condition.text }}</p>
-                </div>
+                    <td class="icon">
+                        <img src="{{ weatherApiService.weatherData.forecast.forecastday[0].day.condition.icon }}">
+                    </td>
 
-                <span class="max-min-temp">
-                    {{ weatherApiService.weatherData.forecast.forecastday[0].day.maxtemp_c | round }}° / {{ weatherApiService.weatherData.forecast.forecastday[0].day.mintemp_c | round }}°
-                </span>
-            </div>
+                    <td>
+                        {{ weatherApiService.weatherData.forecast.forecastday[0].day.condition.text }}
+                    </td>
 
-            <div class="single-day-forecast">
-                <span>{{ weatherApiService.weatherData.forecast.forecastday[1].date | date:'EEE' }}</span>
+                    <td>
+                        {{ weatherApiService.weatherData.forecast.forecastday[0].day.maxtemp_c | round }}° / {{ weatherApiService.weatherData.forecast.forecastday[0].day.mintemp_c | round }}°
+                    </td>
+                </tr>
 
-                <div class="icon-and-text">
-                    <img src="{{ weatherApiService.weatherData.forecast.forecastday[1].day.condition.icon }}">
-                    <p>{{ weatherApiService.weatherData.forecast.forecastday[1].day.condition.text }}</p>
-                </div>
+                <tr>
+                    <td>
+                        {{ weatherApiService.weatherData.forecast.forecastday[1].date | date:'EEE' }}
+                    </td>
 
-                <span class="max-min-temp">
-                    {{ weatherApiService.weatherData.forecast.forecastday[1].day.maxtemp_c | round }}° / {{ weatherApiService.weatherData.forecast.forecastday[1].day.mintemp_c | round }}°
-                </span>
-            </div>
+                    <td class="icon">
+                        <img src="{{ weatherApiService.weatherData.forecast.forecastday[1].day.condition.icon }}">
+                    </td>
 
-            <div class="single-day-forecast">
-                <span>{{ weatherApiService.weatherData.forecast.forecastday[2].date | date:'EEE' }}</span>
+                    <td>
+                        {{ weatherApiService.weatherData.forecast.forecastday[1].day.condition.text }}
+                    </td>
 
-                <div class="icon-and-text">
-                    <img src="{{ weatherApiService.weatherData.forecast.forecastday[2].day.condition.icon }}">
-                    <p>{{ weatherApiService.weatherData.forecast.forecastday[2].day.condition.text }}</p>
-                </div>
+                    <td>
+                        {{ weatherApiService.weatherData.forecast.forecastday[1].day.maxtemp_c | round }}° / {{ weatherApiService.weatherData.forecast.forecastday[1].day.mintemp_c | round }}°
+                    </td>
+                </tr>
 
-                <span class="max-min-temp">
-                    {{ weatherApiService.weatherData.forecast.forecastday[2].day.maxtemp_c | round }}° / {{ weatherApiService.weatherData.forecast.forecastday[2].day.mintemp_c | round }}°
-                </span>
-            </div>
-        </div>
+                <tr>
+                    <td>
+                        {{ weatherApiService.weatherData.forecast.forecastday[2].date | date:'EEE' }}
+                    </td>
+
+                    <td class="icon">
+                        <img src="{{ weatherApiService.weatherData.forecast.forecastday[2].day.condition.icon }}">
+                    </td>
+
+                    <td>
+                        {{ weatherApiService.weatherData.forecast.forecastday[2].day.condition.text }}
+                    </td>
+
+                    <td>
+                        {{ weatherApiService.weatherData.forecast.forecastday[2].day.maxtemp_c | round }}° / {{ weatherApiService.weatherData.forecast.forecastday[2].day.mintemp_c | round }}°
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     } @else {
         <div class="hint">
             <p>The 3-day forecast will be shown here</p>

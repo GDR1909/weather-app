@@ -7,26 +7,31 @@
   padding: 15px;
 }
 
-.three-day-forecast-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.single-day-forecast {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.icon-and-text {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .hint {
   height: calc(261.91px - 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+  tr {
+    border-bottom: 1px solid #bbb;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    td:first-child {
+      padding-left: 16px;
+    }
+  }
+}
+
+.icon {
   display: flex;
   justify-content: center;
   align-items: center;
