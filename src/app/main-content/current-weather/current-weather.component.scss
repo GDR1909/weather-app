@@ -16,6 +16,14 @@
 img {
   height: 120px;
   width: 120px;
+
+  &[data-aos="fade-up"] {
+    transform: translateY(30px); /* Startpunkt */
+  }
+
+  &[data-aos="fade-up"].aos-animate {
+    transform: translateY(0); /* Endpunkt (d.h. Bewegung nach oben) */
+  }
 }
 
 .hint {
@@ -24,4 +32,24 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.city-region-country {
+  &[data-aos="fade-up"] {
+    transform: translateY(30px); /* Startpunkt */
+  }
+
+  &[data-aos="fade-up"].aos-animate {
+    transform: translateY(0); /* Endpunkt (d.h. Bewegung nach oben) */
+  }
+}
+
+h1 {
+  &[data-aos="fade-up"] {
+    transform: translateY(30px); /* Startpunkt */
+  }
+
+  &[data-aos="fade-up"].aos-animate {
+    transform: translateY(0); /* Endpunkt (d.h. Bewegung nach oben) */
+  }
 }

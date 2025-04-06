@@ -29,3 +29,13 @@
   justify-content: center;
   align-items: center;
 }
+
+.single-forecast {
+  &[data-aos="fade-up"] {
+    transform: translateY(30px); /* Startpunkt */
+  }
+
+  &[data-aos="fade-up"].aos-animate {
+    transform: translateY(0); /* Endpunkt (d.h. Bewegung nach oben) */
+  }
+}

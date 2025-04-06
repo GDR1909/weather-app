@@ -1,15 +1,15 @@
 <div class="current-weather">
     @if (weatherApiService.weatherData) {
         <div class="city-infos">
-            <div class="city-region-country">
+            <div class="city-region-country" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
                 <h2>{{ weatherApiService.weatherData.location.name }}</h2>
                 <h5>{{ weatherApiService.weatherData.location.region }}, {{ weatherApiService.weatherData.location.country }}</h5>
             </div>
 
-            <h1>{{ weatherApiService.weatherData.current.temp_c | round }}°</h1>
+            <h1 data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">{{ weatherApiService.weatherData.current.temp_c | round }}°</h1>
         </div>
 
-        <img src="{{ weatherApiService.weatherData.current.condition.icon }}">
+        <img src="{{ weatherApiService.weatherData.current.condition.icon }}" data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-in-out">
     } @else {
         <div class="hint">
             <p>Search for a location to see the current weather or click on one of the popular cities to get more informations</p>
