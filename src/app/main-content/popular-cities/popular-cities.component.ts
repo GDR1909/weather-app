@@ -45,4 +45,12 @@ export class PopularCitiesComponent implements OnInit {
       });
     });
   }
+
+  showWeatherDataOfPopularCity(popularCity: string) {
+    console.log('clicked on:', popularCity);
+    this.weatherApiService.searchedLocation = popularCity;
+    console.log('the searched location is:', this.weatherApiService.searchedLocation);
+    this.weatherApiService.saveWeatherData();
+    this.weatherApiService.searchedLocation = '';
+  }
 }

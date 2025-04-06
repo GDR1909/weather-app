@@ -4,7 +4,7 @@
     <table>
         <tbody>
             @for (data of weatherData; track data) {
-            <tr>
+            <tr (click)="showWeatherDataOfPopularCity(data.city)">
                 <td>
                     {{ data.city }}
                 </td>
