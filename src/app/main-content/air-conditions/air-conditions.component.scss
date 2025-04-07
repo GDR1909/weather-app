@@ -23,6 +23,14 @@
   gap: 20px;
   display: flex;
   flex-direction: column;
+  
+  &[data-aos="fade-up"] {
+    transform: translateY(30px); /* Startpunkt */
+  }
+
+  &[data-aos="fade-up"].aos-animate {
+    transform: translateY(0); /* Endpunkt (d.h. Bewegung nach oben) */
+  }
 }
 
 .single-info-container {

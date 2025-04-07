@@ -28,6 +28,14 @@ table {
     td:first-child {
       padding-left: 16px;
     }
+
+    &[data-aos="fade-up"] {
+      transform: translateY(30px); /* Startpunkt */
+    }
+
+    &[data-aos="fade-up"].aos-animate {
+      transform: translateY(0); /* Endpunkt (d.h. Bewegung nach oben) */
+    }
   }
 }
 
