@@ -22,6 +22,8 @@ export class WeatherApiService {
   }
 
   saveWeatherData() {
+    this.weatherData = null;
+
     this.getWeather(this.searchedLocation).subscribe({
       next: (data) => {
         console.log('Wetterdaten:', data);
