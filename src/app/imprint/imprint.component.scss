@@ -12,3 +12,19 @@
     transform: translateY(0); /* Endpunkt (d.h. Bewegung nach oben) */
   }
 }
+
+img {
+  height: 50px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  border-radius: 100%;
+  padding: 10px;
+  transition: ease-in-out 250ms;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: ease-in-out 250ms;
+  }
+}
