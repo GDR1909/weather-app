@@ -1,10 +1,10 @@
 .current-weather {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  padding: 15px;
+  padding: 20px;
 }
 
 .city-infos {
@@ -14,8 +14,8 @@
 }
 
 img {
-  height: 120px;
-  width: 120px;
+  height: 140px;
+  width: 140px;
 
   &[data-aos="fade-up"] {
     transform: translateY(30px); /* Startpunkt */
@@ -27,7 +27,7 @@ img {
 }
 
 .hint {
-  height: calc(168.91px - 30px);
+  height: calc(189px - 40px);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -44,7 +44,9 @@ img {
   }
 }
 
-h1 {
+h2 {
+  font-size: 28px;
+
   &[data-aos="fade-up"] {
     transform: translateY(30px); /* Startpunkt */
   }

@@ -2,11 +2,11 @@
     @if (weatherApiService.weatherData) {
         <div class="city-infos">
             <div class="city-region-country" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
-                <h2>{{ weatherApiService.weatherData.location.name }}</h2>
-                <h5>{{ weatherApiService.weatherData.location.region }}, {{ weatherApiService.weatherData.location.country }}</h5>
+                <h1>{{ weatherApiService.weatherData.location.name }}</h1>
+                <h4>{{ weatherApiService.weatherData.location.region }}, {{ weatherApiService.weatherData.location.country }}</h4>
             </div>
 
-            <h1 data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">{{ weatherApiService.weatherData.current.temp_c | round }}°</h1>
+            <h2 data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">{{ weatherApiService.weatherData.current.temp_c | round }}°</h2>
         </div>
 
         <img src="{{ weatherApiService.weatherData.current.condition.icon }}" data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-in-out">
