@@ -19,3 +19,17 @@ aside {
   flex-direction: column;
   gap: 20px;
 }
+
+@media screen and (max-width: 950px) {
+  :host {
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+  }
+}

@@ -30,9 +30,8 @@ body {
 }
 
 app-root {
-  height: 90%;
-  width: 90%;
-  border: 2px solid black;
+  height: 60%;
+  width: 85%;
   border-radius: 15px;
   backdrop-filter: blur(10px);
 }
@@ -55,4 +54,16 @@ app-root {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1920px) {
+  app-root {
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  app-root {
+    width: 90%;
+  }
 }
