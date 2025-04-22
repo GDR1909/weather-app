@@ -1,10 +1,10 @@
 .todays-forecast {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
   background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 15px;
-  padding: 20px;
+  border-radius: 0.938rem;
+  padding: 1.25rem;
 }
 
 .forecast-hour {
@@ -23,10 +23,10 @@
   }
 
   hr {
-    border: 1px solid #bbb;
+    border: 0.063rem solid #bbb;
 
     &[data-aos="fade-up"] {
-      transform: translateY(30px);
+      transform: translateY(1.875rem);
     }
   
     &[data-aos="fade-up"].aos-animate {
@@ -36,7 +36,7 @@
 }
 
 .hint {
-  height: calc(193.83px - 40px);
+  height: calc(12.114rem - 2.5rem);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,11 +44,11 @@
 
 .single-forecast {
   span {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   &[data-aos="fade-up"] {
-    transform: translateY(30px);
+    transform: translateY(1.875rem);
   }
 
   &[data-aos="fade-up"].aos-animate {

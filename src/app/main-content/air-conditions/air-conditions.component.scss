@@ -1,11 +1,11 @@
 .air-conditions {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
   background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 15px;
-  padding: 20px;
-  margin-bottom: 20px;
+  border-radius: 0.938rem;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .infos {
@@ -13,19 +13,19 @@
   justify-content: space-evenly;
 
   img {
-    height: 30px;
-    width: 30px;
+    height: 1.875rem;
+    width: 1.875rem;
   }
 }
 
 .left-content,
 .right-content {
-  gap: 20px;
+  gap: 1.25rem;
   display: flex;
   flex-direction: column;
   
   &[data-aos="fade-up"] {
-    transform: translateY(30px);
+    transform: translateY(1.875rem);
   }
 
   &[data-aos="fade-up"].aos-animate {
@@ -35,13 +35,13 @@
 
 .single-info-container {
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .span-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 0.313rem;
 
   span {
     &:first-child {
@@ -49,13 +49,13 @@
     }
     
     &:last-child {
-      font-size: 20px;
+      font-size: 1.25rem;
     }
   }
 }
 
 .hint {
-  height: calc(217.91px - 40px);
+  height: calc(13.619rem - 2.5rem);
   display: flex;
   justify-content: center;
   align-items: center;
