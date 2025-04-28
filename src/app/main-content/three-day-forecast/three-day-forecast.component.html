@@ -4,7 +4,7 @@
 
         <table>
             <tbody>
-                <tr data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
+                <tr data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="true">
                     <td>
                         Today
                     </td>
@@ -22,7 +22,7 @@
                     </td>
                 </tr>
 
-                <tr data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">
+                <tr data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-once="true">
                     <td>
                         {{ weatherApiService.weatherData.forecast.forecastday[1].date | date:'EEE' }}
                     </td>
@@ -40,7 +40,7 @@
                     </td>
                 </tr>
 
-                <tr data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-in-out">
+                <tr data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-in-out" data-aos-once="true">
                     <td>
                         {{ weatherApiService.weatherData.forecast.forecastday[2].date | date:'EEE' }}
                     </td>

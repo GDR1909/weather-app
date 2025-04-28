@@ -71,3 +71,17 @@ app-root {
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 950px) {
+  body {
+    height: auto;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 13px;
+  }
+}

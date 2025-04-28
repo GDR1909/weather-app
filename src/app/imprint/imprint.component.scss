@@ -36,3 +36,9 @@ img {
     transition: ease-in-out 250ms;
   }
 }
+
+@media screen and (max-width: 950px) {
+  .imprint {
+    margin-bottom: 3.75rem;
+  }
+}
