@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 
 
 @Component({
@@ -9,6 +9,12 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   templateUrl: './imprint.component.html',
   styleUrl: './imprint.component.scss'
 })
-export class ImprintComponent {
+export class ImprintComponent implements OnInit {
+  constructor(private router: Router) {}
 
+  ngOnInit() {
+    this.router.navigateByUrl('/imprint').then(() => {
+      window.scrollTo(0, 0);
+    });
+  }
 }
