@@ -55,3 +55,33 @@
     transform: translateY(0);
   }
 }
+
+@media screen and (max-width: 510px) {
+  .forecast-hour {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 1.25rem;
+  }
+
+
+  //////////////////////
+  // Custom Scrollbar //
+  //////////////////////
+  /* width */
+  ::-webkit-scrollbar {
+    // width: 5px;
+    height: 5px;
+    padding-top: 1.25rem;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
