@@ -48,6 +48,24 @@ img {
   }
 }
 
+.temp-time {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+
+  span {
+    color: #faf1e6;
+
+    &[data-aos="fade-up"] {
+      transform: translateY(1.875rem);
+    }
+  
+    &[data-aos="fade-up"].aos-animate {
+      transform: translateY(0);
+    }
+  }
+}
+
 h1 {
   font-size: 2.625rem;
 
@@ -61,5 +79,5 @@ h1 {
 }
 
 h2 {
-  color: #FAF1E6;
+  color: #faf1e6;
 }

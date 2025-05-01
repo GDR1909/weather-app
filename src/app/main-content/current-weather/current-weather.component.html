@@ -6,7 +6,10 @@
                 <span>{{ weatherApiService.weatherData.location.region }}, {{ weatherApiService.weatherData.location.country }}</span>
             </div>
 
-            <h1 data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">{{ weatherApiService.weatherData.current.temp_c | round }}°</h1>
+            <div class="temp-time">
+                <h1 data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">{{ weatherApiService.weatherData.current.temp_c | round }}°</h1>
+                <span data-aos="fade-up" data-aos-duration="2250" data-aos-easing="ease-in-out">Local Time: {{ weatherApiService.weatherData.location.localtime.split(' ')[1] }}</span>
+            </div>
         </div>
 
         <img src="{{ weatherApiService.weatherData.current.condition.icon }}" data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-in-out">
