@@ -6,10 +6,10 @@ input {
   background-color: transparent;
   backdrop-filter: blur(10px);
   background-image: url("/assets/icons/search.png");
-  background-position: 0.5rem center; /* Position des Icons */
-  background-repeat: no-repeat; /* Verhindert, dass sich das Bild wiederholt */
-  background-size: 1rem 1rem; /* Größe des Icons */
-  padding-left: 1.875rem; /* Platz für das Icon im Input */
+  background-position: 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  padding-left: 1.875rem;
   border: none;
 
   &::placeholder {

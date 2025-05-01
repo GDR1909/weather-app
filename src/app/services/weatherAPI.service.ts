@@ -26,7 +26,7 @@ export class WeatherApiService {
 
     this.getWeather(this.searchedLocation).subscribe({
       next: (data) => {
-        console.log('Wetterdaten:', data);
+        // console.log('Wetterdaten:', data);
         this.weatherData = data;
         this.weatherDataUpdated.next(data);
       },

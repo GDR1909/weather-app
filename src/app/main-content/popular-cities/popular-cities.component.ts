@@ -35,10 +35,10 @@ export class PopularCitiesComponent implements OnInit {
         next: (data) => {
           this.weatherData.push({
             city: city,
-            icon: data.current.condition.icon, // Wetter-Icon
-            condition: data.current.condition.text, // Wetter-Beschreibung
-            maxTemp: data.forecast.forecastday[0].day.maxtemp_c, // Höchsttemperatur
-            minTemp: data.forecast.forecastday[0].day.mintemp_c, // Mindesttemperatur
+            icon: data.current.condition.icon,
+            condition: data.current.condition.text,
+            maxTemp: data.forecast.forecastday[0].day.maxtemp_c,
+            minTemp: data.forecast.forecastday[0].day.mintemp_c,
           });
         },
         error: (err) => console.error(`Fehler bei ${city}:`, err),
@@ -47,9 +47,7 @@ export class PopularCitiesComponent implements OnInit {
   }
 
   showWeatherDataOfPopularCity(popularCity: string) {
-    console.log('clicked on:', popularCity);
     this.weatherApiService.searchedLocation = popularCity;
-    console.log('the searched location is:', this.weatherApiService.searchedLocation);
     this.weatherApiService.saveWeatherData();
     this.weatherApiService.searchedLocation = '';
   }
