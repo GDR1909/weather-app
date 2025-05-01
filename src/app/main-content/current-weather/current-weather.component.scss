@@ -81,3 +81,9 @@ h1 {
 h2 {
   color: #faf1e6;
 }
+
+@media screen and (max-width: 370px) {
+  .temp-time {
+    align-items: center;
+  }
+}
