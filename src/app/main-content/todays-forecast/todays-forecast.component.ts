@@ -10,5 +10,12 @@ import { RoundPipe } from '../../pipes/round.pipe';
   styleUrl: './todays-forecast.component.scss',
 })
 export class TodaysForecastComponent {
+
+
+  /**
+   * Injects the WeatherApiService to access today's forecast data.
+   * 
+   * @param weatherApiService - Service that provides weather forecast information.
+   */
   constructor(public weatherApiService: WeatherApiService) {}
 }

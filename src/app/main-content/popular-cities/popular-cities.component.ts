@@ -12,8 +12,13 @@ import { RoundPipe } from '../../pipes/round.pipe';
 })
 export class PopularCitiesComponent implements OnInit {
 
+  /** A list of predefined popular city names */
   popularCities: string[] = ['Berlin', 'London', 'Rome'];
 
+  /**
+   * An array that stores summarized weather data
+   * for each popular city.
+   */
   weatherData: {
     city: string;
     icon: string;
@@ -23,12 +28,27 @@ export class PopularCitiesComponent implements OnInit {
   }[] = [];
 
 
+  /**
+   * Injects the WeatherApiService to fetch weather data.
+   * 
+   * @param weatherApiService - Service that handles API requests.
+   */
   constructor(public weatherApiService: WeatherApiService) {}
 
+
+  /**
+   * Angular lifecycle hook called on component initialization.
+   * Triggers loading of weather data for all popular cities.
+   */
   ngOnInit(): void {
     this.loadWeatherData();
   }
 
+
+  /**
+   * Loads weather data for each city in the popularCities list.
+   * The data is pushed into the `weatherData` array for display.
+   */
   loadWeatherData(): void {
     this.popularCities.forEach((city) => {
       this.weatherApiService.getWeather(city).subscribe({
@@ -46,6 +66,13 @@ export class PopularCitiesComponent implements OnInit {
     });
   }
 
+
+  /**
+   * Fetches detailed weather data when a popular city is clicked.
+   * Temporarily sets the searchedLocation to the selected city.
+   * 
+   * @param popularCity - The city selected by the user.
+   */
   showWeatherDataOfPopularCity(popularCity: string) {
     this.weatherApiService.searchedLocation = popularCity;
     this.weatherApiService.saveWeatherData();

@@ -10,5 +10,12 @@ import { RoundPipe } from '../../pipes/round.pipe';
   styleUrl: './air-conditions.component.scss'
 })
 export class AirConditionsComponent {
+
+
+  /**
+   * Injects the WeatherApiService to access the air condition data.
+   *
+   * @param weatherApiService - The service responsible for providing weather data.
+   */
   constructor(public weatherApiService: WeatherApiService) {}
 }

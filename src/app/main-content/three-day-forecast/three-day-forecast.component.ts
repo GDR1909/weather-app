@@ -12,5 +12,12 @@ import { RoundPipe } from '../../pipes/round.pipe';
   styleUrl: './three-day-forecast.component.scss',
 })
 export class ThreeDayForecastComponent {
+
+
+  /**
+   * Injects the WeatherApiService to access the 3-day forecast data.
+   *
+   * @param weatherApiService - The service providing forecast information.
+   */
   constructor(public weatherApiService: WeatherApiService) {}
 }

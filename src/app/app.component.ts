@@ -23,8 +23,16 @@ export class AppComponent implements OnInit {
 
   // constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
+
+  /**
+   * Lifecycle hook that is called when the component is initialized.
+   * 
+   * This method initializes the AOS (Animate On Scroll) library for scroll-based animations.
+   * It is invoked when the app component is created and ensures that AOS is ready to
+   * be used for animation effects in the application.
+   */
   ngOnInit(): void {
-    AOS.init();
+    AOS.init(); // Initialize AOS (Animate On Scroll) library for animations
 
     // if (isPlatformBrowser(this.platformId)) {
     //   // Nur im Browser ausführen!
