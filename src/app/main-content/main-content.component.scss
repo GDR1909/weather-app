@@ -3,6 +3,7 @@
   gap: 1.25rem;
   padding: 1.25rem;
   height: calc(100% - 7.5rem);
+  border-left: solid 5px rgba(0, 0, 0, 0.2);
   overflow-y: auto;
 }
 
@@ -20,9 +21,16 @@ aside {
   gap: 1.25rem;
 }
 
+@media screen and (min-width: 1920px) {
+  :host {
+    border-left: none;
+  }
+}
+
 @media screen and (max-width: 950px) {
   :host {
     flex-direction: column;
+    border-left: none;
   }
 
   main {
