@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, Subject } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 
 /**
@@ -13,7 +14,7 @@ import { Observable, Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class WeatherApiService {
-  private apiKey = '6ffa0d9448c34c27a1991250252402'; // API key for authenticating requests to WeatherAPI.
+  private apiKey = environment.weatherApiKey; // API key loaded from environment settings.
   private apiUrl = `https://api.weatherapi.com/v1/forecast.json`; // Base URL for the weather forecast API endpoint.
 
   searchedLocation: string = "";
